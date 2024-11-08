@@ -38,8 +38,14 @@ ShopifyApp.configure do |config|
   #   currency_code: "USD", # Only supports USD for now
   # )
 
-  config.api_key = ENV.fetch("SHOPIFY_API_KEY", "").presence
-  config.secret = ENV.fetch("SHOPIFY_API_SECRET", "").presence
+ # These came with the template, I believe setup to use a gem for env:
+  # config.api_key = ENV.fetch("SHOPIFY_API_KEY", "").presence
+  # config.secret = ENV.fetch("SHOPIFY_API_SECRET", "").presence
+
+ # These are my guess, for Rails Creds file:
+ config.api_key = Rails.application.credentials.SHOPIFY_API_KEY.presence
+ config.secret = Rails.application.credentials.SHOPIFY_API_SECRET.presence
+
   # Set `old_secret` to the old secret when rotating client credentials
   # https://shopify.dev/docs/apps/build/authentication-authorization/client-secrets/rotate-revoke-client-credentials
   config.old_secret = ""

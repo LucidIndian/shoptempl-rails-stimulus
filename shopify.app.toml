@@ -3,11 +3,11 @@
 client_id = "2f530e1438329317e9e832a31b48573c"
 name = "shoptempl-rails-stimulus"
 handle = "shoptempl-rails-stimulus"
-application_url = "https://scroll-marking-voltage-wolf.trycloudflare.com"
+application_url = "https://quetzal-definite-sharply.ngrok-free.app/"
 embedded = true
 
 [build]
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
 dev_store_url = "tyghs-test-store.myshopify.com"
 include_config_on_deploy = true
 
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://scroll-marking-voltage-wolf.trycloudflare.com/auth/callback",
-  "https://scroll-marking-voltage-wolf.trycloudflare.com/auth/shopify/callback",
-  "https://scroll-marking-voltage-wolf.trycloudflare.com/api/auth/callback"
+  "https://quetzal-definite-sharply.ngrok-free.app//auth/callback",
+  "https://quetzal-definite-sharply.ngrok-free.app//auth/shopify/callback",
+  "https://quetzal-definite-sharply.ngrok-free.app//api/auth/callback"
 ]
 
 [webhooks]

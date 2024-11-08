@@ -1,4 +1,4 @@
-roles = ["backend"]
+roles = ["frontend"]
 webhooks_path = "api/webhooks/app_uninstalled"
 
 [commands]

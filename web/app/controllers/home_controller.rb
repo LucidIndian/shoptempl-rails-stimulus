@@ -19,6 +19,6 @@ class HomeController < ApplicationController
     #   contents.sub!("%VITE_SHOPIFY_API_KEY%", ShopifyApp.configuration.api_key)
 
     #   render(plain: contents, content_type: "text/html", layout: false)
-    # end
+    end
   end
 end
